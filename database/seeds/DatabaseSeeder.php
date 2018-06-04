@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\author;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,5 +13,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        $authors = factory(Author::class)->times(10)->create();
     }
 }
