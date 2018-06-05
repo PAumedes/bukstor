@@ -12,4 +12,11 @@ class BookController extends Controller
         $books = Book::all();
         return view('books', compact('books'));
     }
+
+    public function create()
+    {
+        return view('book-add');
+    }
+
+    
 }

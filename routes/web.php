@@ -24,6 +24,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/authors', 'AuthorController@index');
 Route::get('/categories', 'CategoryController@index');
 Route::get('/books', 'BookController@index');
+Route::get('/books/add', 'BookController@create');
+Route::post('/addBook', 'BookController@store');
 
 
 // Route::resource('/ejemplos', 'ExamplesController');
