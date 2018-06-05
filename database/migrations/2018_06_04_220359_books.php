@@ -16,9 +16,9 @@ class Books extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('cost');
-            $table->string('price');
-            $table->string('description');
+            $table->integer('cost')->unsigned();
+            $table->integer('price')->unsigned();
+            $table->text('description');
             $table->string('isbn');
             // $table->integer('author_id')->unsigned()->index();
             $table->integer('author_id')->unsigned();
