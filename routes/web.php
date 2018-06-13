@@ -21,11 +21,17 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Authors
 
-Route::get('/authors', 'AuthorController@index');
-Route::get('/categories', 'CategoryController@index');
-Route::get('/books', 'BookController@index');
-Route::get('/books/add', 'BookController@create');
-Route::post('/addBook', 'BookController@store');
+Route::resource('/authors', 'AuthorController');
+Route::resource('/categories', 'CategoryController');
+Route::resource('/books', 'BookController');
+
+// Route::get('/authors', 'AuthorController@index');
+// Route::get('/categories', 'CategoryController@index');
+// Route::get('/books', 'BookController@index');
+// Route::get('/books/add', 'BookController@create');
+// Route::post('/addBook', 'BookController@store');
+
+
 
 
 // Route::resource('/ejemplos', 'ExamplesController');

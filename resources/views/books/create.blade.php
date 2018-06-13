@@ -6,7 +6,7 @@
  </head>
  <body>
 
-    <form action="/addBook" method="post">
+    <form action="/books" method="post">
         @csrf
         <div>
             <label for="name">Título</label>

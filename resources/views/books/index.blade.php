@@ -19,7 +19,8 @@
   </tr>
   @foreach($books as $book)
   <tr>
-    <td>{{$book->name}}</td>
+    <td><a href="/books/{{$book->id}}/edit">{{$book->name}}</a></td> 
+    {{-- <td>{{$book->name}}</td> <a href="/books/{{$book}}/edit"></a> --}}
     <td>{{$book->cost}}</td>
     <td>{{$book->price}}</td>
     <td>{{$book->description}}</td>
